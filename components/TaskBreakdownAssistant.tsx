@@ -10,7 +10,7 @@ const TaskBreakdownAssistant: React.FC = () => {
 
     const handleGetBreakdown = useCallback(async () => {
         if (!taskInfo.trim()) {
-            setError("Por favor, me fale sobre sua tarefa primeiro! ૮ ˶•~•˶ ა");
+            setError("Por favor, me fale sobre sua tarefa primeiro! ♡");
             return;
         }
         setIsLoading(true);
@@ -29,7 +29,7 @@ const TaskBreakdownAssistant: React.FC = () => {
 
     return (
         <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border-2 border-pink-200">
-            <h2 className="font-fancy text-2xl text-pink-500 mb-4">Precisa de ajuda com uma tarefa?</h2>
+            <h2 className="font-fancy text-2xl text-pink-500 mb-4">Precisa de ajuda com uma tarefa? ♡</h2>
             <p className="text-pink-400 mb-4 text-sm">Me conte sobre uma tarefa (como o tema de uma redação ou os requisitos de um projeto) e eu te ajudarei a dividi-la em passos menores! ♡</p>
             
             <textarea
@@ -46,7 +46,7 @@ const TaskBreakdownAssistant: React.FC = () => {
                 disabled={isLoading}
                 className="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-full hover:bg-pink-600 transition-colors duration-300 shadow-md disabled:bg-pink-300 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
             >
-                <span>{isLoading ? 'Pensando...' : 'Dividir tarefa!'}</span>
+                <span>{isLoading ? 'Pensando...' : 'Dividir tarefa! ♡'}</span>
             </button>
 
             {(isLoading || error || breakdown) && (

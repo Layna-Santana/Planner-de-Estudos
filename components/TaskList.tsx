@@ -21,7 +21,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks, onDeleteTask }) => {
     }
 
     if (tasks.length === 0) {
-        return <p className="text-center text-pink-400 italic">Nenhuma tarefa ainda. Adicione uma para começar!</p>;
+        return <p className="text-center text-pink-400 italic">Nenhuma tarefa ainda. Adicione uma para começar! ♡</p>;
     }
 
     return (

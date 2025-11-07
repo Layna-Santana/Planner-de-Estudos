@@ -57,11 +57,11 @@ export default function App() {
                 <main className="grid grid-cols-1 lg:grid-cols-5 gap-8">
                     <div className="lg:col-span-2 space-y-8">
                         <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border-2 border-pink-200">
-                            <h2 className="font-fancy text-2xl text-pink-500 mb-4">Adicionar Nova Tarefa!</h2>
+                            <h2 className="font-fancy text-2xl text-pink-500 mb-4">Adicionar Nova Tarefa! ♡</h2>
                             <TaskInput onAddTask={handleAddTask} />
                         </div>
                         <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg border-2 border-pink-200">
-                            <h2 className="font-fancy text-2xl text-pink-500 mb-4">Minha Lista de Tarefas</h2>
+                            <h2 className="font-fancy text-2xl text-pink-500 mb-4">Minha Lista de Tarefas ♡</h2>
                             <TaskList tasks={sortedTasks} onDeleteTask={handleDeleteTask} />
                         </div>
                         <TaskBreakdownAssistant />

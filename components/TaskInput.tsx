@@ -16,7 +16,7 @@ const TaskInput: React.FC<TaskInputProps> = ({ onAddTask }) => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         if (!description.trim() || !dueDate) {
-            setError('Por favor, preencha a tarefa e a data de entrega! 🎀');
+            setError('Por favor, preencha a tarefa e a data de entrega! ♡');
             return;
         }
         onAddTask({ description, dueDate });
@@ -54,7 +54,7 @@ const TaskInput: React.FC<TaskInputProps> = ({ onAddTask }) => {
                 type="submit"
                 className="w-full bg-pink-500 text-white font-bold py-2 px-4 rounded-full hover:bg-pink-600 transition-colors duration-300 shadow-md transform hover:scale-105"
             >
-                Adicionar Tarefa
+                Adicionar Tarefa ♡
             </button>
         </form>
     );

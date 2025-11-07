@@ -34,7 +34,7 @@ export async function getPlanningSuggestions(tasks: Task[]): Promise<string> {
         3. Para cada tarefa, use o formato exato fornecido no exemplo. Não use markdown.
 
         Exemplo de formato de saída:
-        "Aqui está seu plano de estudos para se manter em dia ✨:
+        "Aqui está seu plano de estudos para se manter em dia ♡:
 
         - TAREFA: Redação de História
           ENTREGA: [Data]
@@ -61,7 +61,7 @@ export async function getTaskBreakdown(taskInfo: string): Promise<string> {
     const model = 'gemini-2.5-flash';
     
     const prompt = `
-        Você é um(a) coach de estudos amigável e brilhante, com uma personalidade como a do Cinnamoroll da Sanrio - doce, prestativo(a) и encorajador(a).
+        Você é um(a) coach de estudos amigável e brilhante, com uma personalidade como a do Cinnamoroll da Sanrio - doce, prestativo(a) и encorajador(a). ♡
         Um(a) estudante precisa de ajuda para dividir uma tarefa complexa em passos menores e gerenciáveis.
 
         Aqui está a descrição da tarefa pelo(a) estudante:
@@ -72,16 +72,16 @@ export async function getTaskBreakdown(taskInfo: string): Promise<string> {
         1. Clara e estruturada, preferencialmente como uma lista numerada ou com marcadores.
         2. Divida a tarefa em passos lógicos e acionáveis (ex: Pesquisar, Esboçar, Rascunhar, Revisar).
         3. Ofereça dicas úteis ou encorajamento ao longo do caminho.
-        4. Use um tom fofo, positivo e motivacional. Use emojis como ☁️✨📝💖.
+        4. Use um tom fofo, positivo e motivacional. Use emojis como ☁️✨📝💖 e corações ♡.
         
         Exemplo de formato de saída:
-        "Claro que posso ajudar com isso! Vamos fazer um plano juntos(as)! ☁️✨
+        "Claro que posso ajudar com isso! Vamos fazer um plano juntos(as)! ♡☁️✨
 
         Aqui está um pequeno roteiro para te ajudar com sua redação:
 
         1.  **Entenda o Tema (Dia 1):** Primeiro, vamos ter certeza de que sabemos exatamente o que o enunciado está pedindo! Leia algumas vezes e destaque as palavras-chave. 💖
         2.  **Pesquise e Colete Informações (Dias 2-3):** Hora de virar detetive! Vamos encontrar ótimas fontes. Tente procurar livros na biblioteca e artigos acadêmicos online. Faça muitas anotações! 📝
-        3.  **Crie um Esboço (Dia 4):** Um bom plano torna a escrita muito mais fácil! Vamos esboçar seus pontos principais e como eles se conectarão.
+        3.  **Crie um Esboço (Dia 4):** Um bom plano torna a escrita muito mais fácil! Vamos esboçar seus pontos principais e como eles se conectarão. ♡
         4.  ...e assim por diante."
     `;
 

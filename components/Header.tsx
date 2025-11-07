@@ -9,7 +9,7 @@ const Header: React.FC<HeaderProps> = ({ onPrint }) => {
     return (
         <header className="flex flex-col sm:flex-row justify-between items-center bg-white/50 backdrop-blur-sm p-4 rounded-2xl shadow-md border-2 border-pink-200 print:hidden">
             <div>
-                 <h1 className="font-fancy text-4xl text-pink-600">Meu Planner de Estudos</h1>
+                 <h1 className="font-fancy text-4xl text-pink-600">Meu Planner de Estudos ♡</h1>
                  <p className="text-pink-400">Vamos nos organizar com fofura! ♡</p>
             </div>
             <button
